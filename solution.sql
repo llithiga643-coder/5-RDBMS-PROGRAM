@@ -1,16 +1,13 @@
--- ============================================
--- SOLUTION - INSERT STUDENT RECORDS
--- ============================================
+create table student(
+student_ID int primary key,
+student_name varchar (30),
+varchar(10),
+Dept_ID int(10)
+);
+INSERT INTO student VALUES
+(1001,'arun','male',101),
+(1002,'divya','female',102),
+(1003,'karthick','male',103);
 
-USE CollegeDB;
-
--- Insert student records
-INSERT INTO Student
-    (StudentID, StudentName, Gender, DepartmentID)
-VALUES
-    (1001, 'Arun', 'Male', 101),
-    (1002, 'Divya', 'Female', 102),
-    (1003, 'Karthik', 'Male', 101);
-
--- Display all student records
-SELECT * FROM Student;
+SELECT*FROM student;
+desc student;
